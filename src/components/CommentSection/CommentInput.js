@@ -1,7 +1,10 @@
 // You do not need to do anything in this file
-import React from 'react';
+import React, { useState } from 'react';
 
 const CommentInput = props => {
+
+
+ 
   return (
     <form className="comment-form" onSubmit={props.submitComment}>
       <input
@@ -9,6 +12,7 @@ const CommentInput = props => {
         value={props.comment}
         placeholder="Add comment... "
         onChange={props.changeComment}
+        
       />
     </form>
   );
